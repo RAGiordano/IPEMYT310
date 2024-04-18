@@ -1,0 +1,20 @@
+/* ================ TEST ================ */
+.header {
+    /* background-color: pink; */
+    border: 1px solid red;
+}
+
+.nav {
+    /* background-color: yellow; */
+    border: 1px solid blue;
+}
+
+.main {
+    /* background-color: blue; */
+    border: 1px solid green;
+}
+
+.footer {
+    /* background-color: aquamarine; */
+    border: 1px solid orange;
+}

@@ -1,0 +1,27 @@
+/* ================ CSS VARIABLES ================ */
+:root {
+    /* ================ COLORS ================ */
+    --color-bg1: rgb(70, 70, 215);
+    --color-bg2: rgb(55, 55, 55);
+    --color-bg3: rgb(255, 255, 255);
+
+
+    --color-bg1-text-1: rgb(255, 255, 255);
+    --color-bg2-text-1: rgb(211, 211, 211);
+    --color-bg2-text-2: rgb(255, 255, 255);
+    --color-bg3-text-1: var(--color-bg1);
+    --color-bg3-text-2: rgb(0, 0, 0);
+    --color-bg3-text-3: var(--color-bg2);
+
+    /* ================ ELEMENT DIMENTIONS ================ */
+
+    --header-min-heigh: 80px;
+    --btn-height: 25px;
+
+
+    /* ================ FONTS ================ */
+    --font-family1: Arial, Helvetica, sans-serif;
+    
+    --html-font-size: 16px
+
+}
