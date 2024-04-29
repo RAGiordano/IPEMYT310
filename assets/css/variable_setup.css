@@ -16,6 +16,9 @@
     /* ================ ELEMENT DIMENTIONS ================ */
 
     --header-min-heigh: 80px;
+    --hero-min-heigh: 0px;
+    --footer-min-heigh: 80px;
+    --main-min-heigh: calc(100vw - var(--header-min-heigh) - var(--hero-min-heigh) - var(--footer-min-heigh));
     --btn-height: 25px;
 
 

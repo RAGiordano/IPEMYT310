@@ -94,15 +94,31 @@ body {
 
 
 /* ================ NAV ================ */
+.nav-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    height: 50px;
+}
+
+.social {
+    /* height: fit-content; */
+    display: flex;
+    justify-content: end;
+    gap: 10px;
+}
+
+.social .icon {
+    width: 30px;
+    fill: var(--color-bg1-text-1);
+}
+
 .nav {
     display: flex;
-    flex-direction: row-reverse;
-    /* min-height: var(--header-min-heigh); */
-    justify-content: space-around;
-
+    flex-direction: row;
     position: absolute;
-    right: 7px;
-    /* width: 40px; */
+    justify-content: end;
+    position: relative;
 }
 
 /* MENU */
@@ -114,14 +130,13 @@ body {
     display: block;
 }
 
-.burger,
-.nav .login-btn {
+.burger {
     /* MENU BUTTON */
     height: 30px;
     font-size: 1.0rem;
     border-radius: 4px;
     width: 40px;
-    margin: 0 6px 0 10px;
+    margin: 0 0 0 10px;
     /* FLEX */
     display: flex;
     align-items: center;
@@ -139,10 +154,6 @@ body {
     padding: 0 0 2px 0;
 }
 
-.nav .login-btn .login-icon {
-    width: 1.2rem;
-}
-
 .burger:hover {
     /* MENU BUTTON HOVER */
     /* background: #7525a7; */
@@ -155,20 +166,28 @@ body {
 
 .nav ul {
     display: none;
-    margin-top: 0;
-    padding: 0;
-    border-bottom: 2px solid var(--color-bg2);
-    /* background-color: #ff3b3c; */
+    flex-direction: row;
+    justify-content: flex-end; /* Alinea el contenido del menú a la derecha */
+    list-style-type: none;
+    border: none;
+    position: absolute; /* Posiciona el menú absolutamente con respecto al botón */
+    top: calc(100% + 10px); /* Coloca el menú debajo del botón de menú */
+    right: 0;
+    background-color: var(--color-bg1); /* Establece el color de fondo del menú */
+    z-index: 1; /* Asegura que el menú aparezca por encima de otros elementos */
+    border-bottom: 2px solid var(--color-bg1);
+    gap: min(20px, 1vw);
 }
 
 .nav ul li {
     display: block;
+    box-sizing: border-box;
     padding: 0 13px;
     height: var(--btn-height);
     align-content: center;
     list-style: none;
     background-color: var(--color-bg1-text-1);
-    margin: 0 min(10px, 0.5vw);
+    
 }
 
 .nav ul li a {
@@ -196,6 +215,8 @@ body {
 .footer {
     width: 100%;
     min-height: 200px;
+    background-color: var(--color-bg1);
+    color: var(--color-bg1-text-1);
 }
 
 
@@ -227,38 +248,19 @@ body {
         display: none;
     }
 
-    .nav-container {
-        display: flex;
-        flex-direction: column;
-        gap: 20px;
-        height: 50px;
-    }
 
-    .social {
-        height: fit-content;
-        display: flex;
-        justify-content: end;
-        gap: 10px;
-    }
 
-    .social .icon {
-        width: 30px;
-        fill: var(--color-bg1-text-1);
-    }
-
-    .nav {
-        flex-direction: row;
-        width: unset;
-        position: relative;
-        right: unset;
-    }
-
+    /* ================ NAV ================ */
     .nav ul {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
         list-style-type: none;
         border: none;
+        /* right: 0; */
+
+
+
     }
 
     .nav ul li a {
@@ -275,36 +277,7 @@ body {
         /* color: #ff3b3c; */
     }
 
-    .nav .login-btn {
-        padding: 0 5px;
-        width: auto;
-        color: var(--color-bg1);
-        height: var(--btn-height);
-        align-content: center;
-        list-style: none;
-        background-color: var(--color-bg1-text-1);
-        margin: 0 min(10px, 0.5vw);
-        border-radius: 0px;
-    }
-
-    .nav .login-btn p {
-        margin-left: 8px;
-    }
-
-    .login-btn .image {
-        height: 5px;
-        margin: 0;
-        padding: 0;
-        /* border-radius: 0px; */
-    }
-
     .burger-container {
-        height: fit-content;
-    }
-
-    .nav .login-btn .login-icon {
-        width: 0.5rem;
-        padding: 0;
-        margin: 0;
+        /* height: fit-content; */
     }
 }
