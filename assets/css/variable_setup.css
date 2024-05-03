@@ -1,13 +1,19 @@
+@font-face {
+    font-family: 'Font1';
+    src: url('/assets/fonts/source-sans-pro/SourceSansPro-Regular.otf') format('opentype');
+}
+
 /* ================ CSS VARIABLES ================ */
 :root {
     /* ================ COLORS ================ */
-    --color-bg1: rgb(70, 70, 215);
-    --color-bg2: rgb(55, 55, 55);
-    --color-bg3: rgb(255, 255, 255);
+    --color-bg1: rgb(240,240,240);
+    --color-bg2: rgb(68, 68, 238);
+    --color-bg3: rgb(55, 55, 55);
+    
 
 
-    --color-bg1-text-1: rgb(255, 255, 255);
-    --color-bg2-text-1: rgb(211, 211, 211);
+    --color-bg1-text-1: rgb(68, 68, 238);
+    --color-bg2-text-1: rgb(230, 230, 230);
     --color-bg2-text-2: rgb(255, 255, 255);
     --color-bg3-text-1: var(--color-bg1);
     --color-bg3-text-2: rgb(0, 0, 0);
@@ -16,14 +22,17 @@
     /* ================ ELEMENT DIMENTIONS ================ */
 
     --header-min-heigh: 80px;
-    --hero-min-heigh: 0px;
-    --footer-min-heigh: 80px;
+    --hero-min-heigh: 300px;
+    --footer-min-heigh: 150px;
     --main-min-heigh: calc(100vw - var(--header-min-heigh) - var(--hero-min-heigh) - var(--footer-min-heigh));
-    --btn-height: 25px;
+    --btn-width: 126px;
+    --btn-height: 34px;
 
 
     /* ================ FONTS ================ */
-    --font-family1: Arial, Helvetica, sans-serif;
+    
+
+    --font-family1: Font1;
     
     --html-font-size: 16px
 

@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>IPEMyT 310 - Puerto Argentino</title>
+    <link rel="dns-prefetch" href="//fonts.googleapis.com">
     <link rel="stylesheet" href="assets/css/variable_setup.css">
     <link rel="stylesheet" href="assets/css/styles.css">
     <!-- <link rel="stylesheet" href="assets/css/test.css"> -->
@@ -40,12 +41,22 @@
                     <input id="toggle" type="checkbox">
                     <label class="burger" for="toggle">&#9776;</label>
                     <ul class="list">
-                        <li><a href="#">Inicio</a></li>
-                        <li><a href="#">Institucional</a></li>
-                        <li><a href="#">Novedades</a></li>
-                        <li><a href="#">Fotos</a></li>
-                        <li><a href="#">Contacto</a></li>
-                        <li><a href="#">Login</a></li>
+                        <li><a class="menu-option selected" href="#">Novedades</a></li>
+                        <li><a class="menu-option" href="#">Institucional<span class="arrow-icon-container">
+                                    <svg class="arrow-icon" xmlns="http://www.w3.org/2000/svg"
+                                        xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px"
+                                        viewBox="57 35.171 26 16.043" enable-background="new 57 35.171 26 16.043"
+                                        xml:space="preserve">
+                                        <path d="M57.5,38.193l12.5,12.5l12.5-12.5l-2.5-2.5l-10,10l-10-10L57.5,38.193z">
+
+                                        </path>
+                                    </svg>
+                                </span>
+                            </a>
+
+                        </li>
+                        <li><a class="menu-option" href="#">Contacto</a></li>
+                        <li><a class="menu-option" href="#">Iniciar sesión</a></li>
                     </ul>
                 </div>
             </div>
@@ -53,7 +64,7 @@
 
     </header>
 
-    <hero>
+    <hero class="hero">
         <div class="hero-photo"></div>
     </hero>
 
