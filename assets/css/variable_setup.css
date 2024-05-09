@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'Font1';
-    src: url('assets/fonts/source-sans-pro/SourceSansPro-Regular.otf') format('opentype');
+    src: url("../fonts/source-sans-pro/SourceSansPro-Regular.otf") format('opentype');
 }
 
 /* ================ CSS VARIABLES ================ */
