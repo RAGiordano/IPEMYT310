@@ -235,7 +235,7 @@ body {
 .swiper {
     width: 100%;
     height: var(--hero-heigh);
-    background-color: brown;
+    /* background-color: brown; */
 }
 
 .img-1 {
@@ -253,7 +253,7 @@ body {
 .swiper-slide {
     background-size: cover;
     background-position: center center;
-    background-color: pink;
+    /* background-color: pink; */
 }
 
 .hero-slide-img {
