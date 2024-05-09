@@ -239,15 +239,15 @@ body {
 }
 
 .img-1 {
-    background-image: url("/assets/img/slide1.jpg");
+    background-image: url("assets/img/slide1.jpg");
 }
 
 .img-2 {
-    background-image: url("/assets/img/slide2.jpeg");
+    background-image: url("assets/img/slide2.jpeg");
 }
 
 .img-3 {
-    background-image: url("/assets/img/slide3.jpeg");
+    background-image: url("assets/img/slide3.jpeg");
 }
 
 .swiper-slide {
