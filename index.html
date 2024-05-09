@@ -8,6 +8,14 @@
     <link rel="dns-prefetch" href="//fonts.googleapis.com">
     <link rel="stylesheet" href="assets/css/variable_setup.css">
     <link rel="stylesheet" href="assets/css/styles.css">
+
+    <script type="module" src="assets/js/script.js" defer></script>
+
+    <!-- Swiper styles -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <!-- Animate styles -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <!-- <link rel="stylesheet" href="assets/css/test.css"> -->
 </head>
 
@@ -34,7 +42,6 @@
                     <path
                         d="M176 24H80a56.06 56.06 0 0 0-56 56v96a56.06 56.06 0 0 0 56 56h96a56.06 56.06 0 0 0 56-56V80a56.06 56.06 0 0 0-56-56m-48 152a48 48 0 1 1 48-48a48.05 48.05 0 0 1-48 48m60-96a12 12 0 1 1 12-12a12 12 0 0 1-12 12m-28 48a32 32 0 1 1-32-32a32 32 0 0 1 32 32" />
                 </svg>
-
             </div>
             <div class="nav">
                 <div class="burger-container">
@@ -65,7 +72,43 @@
     </header>
 
     <hero class="hero">
-        <div class="hero-photo"></div>
+        <!-- <div class="hero-photo"></div> -->
+
+        <div class="swiper">
+            <div class="swiper-wrapper">
+                <!-- slide 1 -->
+                <div class="swiper-slide slide-1 slide-item img-1">
+                    <div class="text-container">
+                        <!-- <h1 class="slider-title">Slide 1</h1> -->
+                    </div>
+                    
+                </div>
+
+                <!-- slide 2 -->
+                <div class="swiper-slide slide-2 slide-item img-2">
+                    <div class="text-container">
+                        <!-- <h1 class="slider-title">Slide 2</h1> -->
+                    </div>
+                </div>
+
+                <!-- slide 3 -->
+                <div class="swiper-slide slide-3 slide-item img-3">
+                    <div class="text-container">
+                        <!-- <h1 class="slider-title">Slide 3</h1> -->
+                    </div>
+                </div>
+
+            </div>
+
+
+        </div>
+
+        <!-- <swiper-container>
+            <swiper-slide><img class="hero-slide-img" src="/assets/img/slide1.jpg" alt="Img1"></swiper-slide>
+            <swiper-slide><img class="hero-slide-img" src="/assets/img/slide2.jpeg" alt="Img2"></swiper-slide>
+            <swiper-slide><img class="hero-slide-img" src="/assets/img/slide3.jpeg" alt="Img3"></swiper-slide>
+            <swiper-slide><img class="hero-slide-img" src="/assets/img/slide4.jpg" alt="Img4"></swiper-slide>
+        </swiper-container> -->
     </hero>
 
     <main class="main">
@@ -77,8 +120,12 @@
     <footer class="footer">
         <h3>IPEMyT 310</h3>
 
-        <p>Esquina de calles Sto. Ríos y Cbo. Ludueña</p>
+        <p>Calle Sto. Ríos esquina Cbo. Ludueña</p>
     </footer>
+
+    <!-- Scripts -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script> -->
+    
 </body>
 
 </html>
