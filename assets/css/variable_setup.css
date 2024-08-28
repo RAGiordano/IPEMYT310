@@ -1,40 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sarabun:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Acme&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Concert+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Display:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Francois+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Yantramanav:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Commissioner:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Geologica:wght@400&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap');
+
+
+
 @font-face {
-    font-family: 'Font1';
-    src: url("../assets/fonts/source-sans-pro/SourceSansPro-Regular.otf") format('opentype');
+    font-family: 'Font0';
+    src: url("/assets/fonts/source-sans-pro/SourceSansPro-Regular.otf") format('opentype');
+}
+
+
+
+
+
+
+
+
+/* Fuentes locales */
+@font-face {
+    font-family: 'Font0';
+    src: url("/assets/fonts/source-sans-pro/SourceSansPro-Regular.otf") format('opentype');
 }
 
 /* ================ CSS VARIABLES ================ */
 :root {
     /* ================ COLORS ================ */
-    --color-bg1: rgb(240,240,240);
-    --color-bg2: rgb(11, 83, 148);
+    --color-bg1: rgb(11, 83, 148);
+    --color-bg2: rgb(240,240,240);
     --color-bg3: rgb(55, 55, 55);
+    --color-bg4: rgb(245, 174, 10);
+    --color-bg5: rgb(20, 140, 246);
+
     
 
 
     --color-bg1-text-1: var(--color-bg2);
-    --color-bg2-text-1: rgb(230, 230, 230);
-    --color-bg2-text-2: rgb(255, 255, 255);
-    --color-bg3-text-1: var(--color-bg1);
-    --color-bg3-text-2: rgb(0, 0, 0);
+    --color-bg2-text-1: var(--color-bg1);
+    --color-bg2-text-2: var(--color-bg3);
+    --color-bg3-text-1: var(--color-bg2);
+    --color-bg3-text-2: var(--color-bg4);
     --color-bg3-text-3: var(--color-bg2);
+    --color-bg5-text-1: var(--color-bg2);
 
     /* ================ ELEMENT DIMENTIONS ================ */
     /* --body-max-width: 1800px; */
-    --header-heigh: 80px;
-    --hero-heigh: min(61.8vw, 550px);
+    --header-heigh: 118px;
+    --hero-heigh: min(61.8vw, calc(100vh - var(--header-heigh)));
     --footer-min-heigh: 150px;
     --main-min-heigh: calc(100vw - var(--header-heigh) - var(--hero-heigh) - var(--footer-min-heigh));
     
-    --btn-width: 126px;
-    --btn-height: 34px;
+    /* --btn-width: 136px; */
+    --btn-height: 28px;
 
 
     /* ================ FONTS ================ */
     
 
     --font-family1: Font1;
+    --font-family1: 'Poppins', sans-serif;
+    --font-family1: 'Inter', times;
+    --font-family1: 'Nunito Sans', times;
+    --font-family1: 'Nunito', times;
+    
+    --font-family2: 'DM Sans', times;
+    --font-family2: 'Kanit', times;
+    --font-family2: 'Sarabun', times;
+    --font-family2: 'Hind Madurai', times;
+    --font-family2: 'Yantramanav', times;
+    --font-family2: 'Geologica', times;
+    --font-family2: 'Commissioner', times;
+    --font-family2: 'Francois One', times;
+    --font-family2: 'Noto Sans Display', times;
+    --font-family2: 'Concert One', times;
+    --font-family2: 'Acme', times;
+    --font-family2: 'Catamaran', times;
+    --font-family2: 'Mukta', times;
+    --font-family3: 'Open Sans', sans-serif;
+    --font-family4: 'Source Sans Pro', sans-serif;
+    --font-family5: 'Raleway', sans-serif;
+
+    --font-family1: 'Rubik', times;
     
     --html-font-size: 16px
+
+
+    /* ================ LINKS ================ */
+    --facebook-link: 'https://www.facebook.com/ipemyt310puertoargentino';
+    --instagram-link: 'https://instagram.com/ipemyt310';
+    --email-link: 'mailto:puertoargentino@ipemyt310.edu.ar';
 
 }
